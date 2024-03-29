@@ -36,11 +36,12 @@ Screenshots-
 ![2024-03-29 (7)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/d06bab87-6986-4e4b-a03a-b7f4a8ee874a)
 
 
-Flip Flop ratio = Total Number of D flip flop / Total number of Cells
+Flip-Flop ratio = $\frac{Total Number of D flip flop}{Total number of Cells}$
 
 Percentage = Flip flop ratio * 100
 
-Ratio = 1613/14876    
-  =0.108429685
+$Ratio$ = $\frac{1613}{14876}$
 
 Percentage = 10.84296854%      
+
+

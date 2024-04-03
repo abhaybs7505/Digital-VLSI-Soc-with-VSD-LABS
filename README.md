@@ -66,7 +66,23 @@ Percentage = 10.84296854%
 ![2024-03-30 (2)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/c54b2a97-a937-48ce-be84-fc224f1a3e81)
 ![2024-03-30 (3)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/077a3341-f70c-4237-8e69-b3adb90b48f4)
 
-ClCU
+**Calculation according to Floorplan**
+1000 Unit Distance = 1 Micron
+
+Die width in unit distance = 6606865
+
+Die height in unit distance = 671405
+
+Distance in microns = $\frac{Value in Unit Distnace}{100}$
+
+Die width in microns = $\frac{6606865}{1000}$ = 660.685 microns
+
+Die height in microns = $\frac{671405}{1000}$ = 671.405 microns
+
+Area of Die in microns = 660.685 * 671.405 = 443587.212425 Sq microns
+
+
+
 
 **Results**
 
@@ -79,6 +95,11 @@ For a better understanding of the floor plan we can open the *Magic* file by an 
 *magic -T /home/kunalg123/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def*
 
 ![2024-03-30 (9)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/acde59c3-460c-46ac-bd62-7a21f9fcfaab)
+
+To select a object hover the mouse onto the object and then press 's' on the keyborad.
+
+To Zoom in select the object and then press 'z' & to Zoom out press 'shift+z'
+
 ![2024-03-30 (10)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/9bb69a86-f873-4791-8798-432cd6807a13)
 ![2024-03-30 (12)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/3fba9980-28fe-46bb-abc0-e57768951c59)
 ![2024-03-30 (12)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/278b6e72-e7cd-4848-9f9f-eb24895c07e8)
@@ -88,6 +109,9 @@ For a better understanding of the floor plan we can open the *Magic* file by an 
 ![2024-03-30 (16)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/a8597266-5c6d-4e1e-bc46-fe802050fe5a)
 ![2024-03-30 (17)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/72dc6a23-35af-4d68-b7ab-8a7e8fe45e30)
 ![2024-03-30 (20)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/0fda4a7a-5401-421c-b4e1-c7bb26bb48a7)
+
+# Section-3 
+
 
 
 

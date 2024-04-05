@@ -128,10 +128,126 @@ To Zoom in select the object and then press 'z' & to Zoom out press 'shift+z'
 5. Post-layout ngspice simulations.
 6. Finding problems in the *DRC* section of the magic tech file for the skywater process and fix them.
 
+#Cloning from github repository
+
+![2024-04-04 (1)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/bea61f22-14f1-448e-abfc-2e045428078d)
+
+#Inverter Layout Design 
+
+![2024-04-04 (1)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/8c727a47-3830-491c-bad0-1b44be39ac2c)
+
+#To Identify NMOS & PMOS
+![2024-04-04 (3)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/e63e9b4d-5294-46d7-8cac-4673ca17fcd1)
+![2024-04-04 (4)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/68cb04be-7556-4bcf-8026-2979cf211b9b)
+
+#Verifying that Y o/p is connected to PMOS & NMOS drain
+
+![2024-04-04 (5)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/25bf7f5d-c513-4a53-85a3-dcef4ac7b6a3)
+
+#Verification of VPWR connectivity to PMOS source
+
+![2024-04-04 (6)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/d06d2a52-4018-4c6b-9cec-edb5cb7bd528)
+
+#Verification of VGND connectivity to NMOS source
+
+![2024-04-04 (7)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/54ee9eea-126c-4dbe-8a2d-0676a9f43a86)
+
+tkcon window:
+
+![2024-04-04 (8)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/2f0520ec-4a9f-4ce9-be86-bf479716e07a)
+
+#sky130A spice file
+
+![2024-04-04 (9)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/3c86359b-9397-4df3-92d9-1e73a31eaf56)
+
+#Stimulating the spice file in magic
+
+![2024-04-04 (10)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/3b63fe31-4fc0-4efd-89ab-2da6b2946021)
+
+#Editing the spice file according to the given requirement
+
+![2024-04-04 (11)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/00376351-e264-4888-be2e-95f527de6083)
+
+#Running ngspice:
+
+To load spice file type the command - *ngspice sky130_inv.spice* followed by *plot y vs time a*
+
+![2024-04-04 (13)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/cd39efc9-93b8-4741-bb78-9a0fef54fa72)
+
+![2024-04-04 (15)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/334149d0-23f2-431b-8085-52696516952b)
+
+**20% Screenshot**
+
+![314009074-0180052c-4b8c-4bd8-928c-cd8ab34d5a17](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/ebcd6bd1-84f7-4c0b-bb95-0024102694fe)
+
+**80% Screenshot**
+
+![314009811-7bc0eeee-c7cd-464e-a90b-cac8d4f83144](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/39aa6491-3551-46f6-8d01-021c85a47c60)
+
+**50% Screenshot**
+
+![314018565-e34363cd-a70f-4939-b8e5-efb10620ce93](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/f32f314c-3635-4740-9230-6618164694a1)
+
+calculyioyuodjry
+
+#Finding the errors in DRC section of old magic file:
+
+![2024-04-05 (1)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/97971bf3-5ed7-4a8e-b0da-c96a0f2e35f4)
+
+#This is the .magicrc file
+
+![2024-04-05 (1)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/2c45420d-dd2b-4a51-a761-de6a681c5a28)
+
+*To refer the Sky130A Periphery rules: https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html* 
+
+**This will be useful for viewing the poly.9 rule, difftap.2 rule, nwell.4 rule correction**
+
+![2024-04-05 (3)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/929d48ca-b778-4a86-bf31-5b8c1e620235)
+![2024-04-05 (4)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/07171554-1522-4bd9-b14c-f50d9c45c2e9)
+![2024-04-05 (6)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/09693002-dfd8-4af4-be9f-95a013fb2c00)
+
+#Poly.9 rule violation, No Drc error
+
+![2024-04-05 (7)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/ff7bf398-ef11-42af-9bfd-2cd8b084804f)
+
+#Updated sky130A.tech file
+
+![315579814-dc30df54-3282-42f0-8e7d-fc4d8877ed64](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/fd31d72a-17e9-4662-b6d7-05f5c9a5542f)
+![315565406-d112ca07-854c-41e7-8822-c269e21defea](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/ef2d905d-4541-46a1-b026-c3dce43c01b0)
+
+#Rule implemented
+
+![315580472-d5afe8d8-691b-485d-a89a-8f901e18b56e](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/1b91e47d-baa9-4902-8910-85172edb2e5b)
+
+#difftap.2 rule violation, No DRC error
+
+Screenshot of rule implemented
+
+To Implement this we need to update the sky130A.tech file
+
+![315588573-a3f92160-6701-48fb-b6cf-e4c41dc4a531](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/20c7cd0a-c3d6-4f04-9b7c-8017b3086eee)
+
+#Updated sky130A.tech file
+
+![315587555-b5892f9b-9c5d-4b1b-baa2-6fe45f3965b1](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/3cd3edfc-b1c0-4bb2-9c6c-47fd578a5e0f)
 
 
+#Incorrect nwell.4 rule, No DRC violation
 
+![315594932-87da8944-0ad8-455d-97ec-3909eac656c3](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/3f4ab2ef-df9d-4c20-bd8e-41e74fa601e3)
 
+#Change of Commands in sky130A.tech file
+
+![315598066-886c6930-6314-4a6f-97d9-6b8423444ac0](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/08522fa0-e3a9-440f-bbb5-c8ae34145112)
+![315598080-d9808e9a-42c2-4421-9b82-2ef65a5a1ad7](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/e841ff53-3604-4021-9b03-e98e43225c1d)
+
+#To check run the commands in tkcon window
+*tech load sky130A.tech*
+*drc style drc(full)*
+*drc check*
+*drc why*
+
+![315600131-49b1004d-f860-4ca7-86f4-4d79784a01cf](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/81b8843f-90ec-4e24-b227-b0b0e5fa1501)
 
 
 

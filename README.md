@@ -2,6 +2,13 @@
 ![thumb](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/999d09e6-7f6b-41f8-98b8-81939600af8a)
 
 
+Section 1:
+
+Section2: 
+
+[Section 3](#section3-design-library-cell-using-magic-layout-and-ngspice-characterization)
+
+
 
 # Section-1: Inception of open source EDA, Openlane & Sky130 PDK:
 
@@ -110,8 +117,16 @@ To Zoom in select the object and then press 'z' & to Zoom out press 'shift+z'
 ![2024-03-30 (17)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/72dc6a23-35af-4d68-b7ab-8a7e8fe45e30)
 ![2024-03-30 (20)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/0fda4a7a-5401-421c-b4e1-c7bb26bb48a7)
 
-# Section-3 
+# Section3 Design library cell using Magic Layout and ngspice characterization
 
+**Objectives:**
+
+1. Cloning custom inverter standard cell design from github repository link: Standard cell design and characterization using OpenLANE flow.
+2. Load custom inverter layout in magic and explore.
+3. Spice extraction of inverter in magic.
+4. Editing the spice model file through simulation.
+5. Post-layout ngspice simulations.
+6. Finding problems in the *DRC* section of the magic tech file for the skywater process and fix them.
 
 
 

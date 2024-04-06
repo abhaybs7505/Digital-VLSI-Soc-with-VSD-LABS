@@ -250,6 +250,65 @@ To Implement this we need to update the sky130A.tech file
 ![315600131-49b1004d-f860-4ca7-86f4-4d79784a01cf](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/81b8843f-90ec-4e24-b227-b0b0e5fa1501)
 
 
+# Section 4 Pre-layout timing analysis and importance of good clock tree
+
+**Objectives:**
+1. Fix DRC errors and verify the design to be inserted into our flow.
+2. Save the finalized layout with custom name and open it.
+3. Generate lef from the layout.
+4. Copy the newly generated lef and associated required lib files to 'picorv32a' design 'src' directory.
+5. Edit 'config.tcl' to change lib file and add the new extra lef into the openlane flow.
+6.Run openlane flow synthesis with new custom inverter cell.
+7. Remove the newly introduced violations with the introduction of custom inverter cell by modifying design parameters.
+8. Once synthesis has accepted our custom inverter run floorplan, placement and verify the cell is accepted in PnR flow.
+9. Post-Synthesis timing analysis with OpenSTA tool.
+10. Make timing ECO fixes to remove violations.
+11. Replace the old netlist with the new netlist generated after timing ECO fix and implement the floorplan, placement & cts.
+12. Post-CTS OpenROAD timing analysis.
+13. Explore post-CTS OpenROAD timing analysis by removing 'sky130_fd_sc_hd__clkbuf_1' cell from clock buffer list variable 'CTS_CLK_BUFFER_LIST'.
+
+
+#Fix up small DRC errors and verify the design is ready to be inserted into our flow.
+
+**Rules**
+
+**Rule 1:**  The input and output ports of the standard cell should lie on the intersection of the vertical and horizontal tracks.
+
+**Rule 2:** Width of the standard cell should be odd multiples of the horizontal track pitch (taking 3 here)
+
+**Rule 3:** Height of the standard cell should be even multiples of the vertical track pitch.
+
+#Commands to be typed:
+
+*cd Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign*
+
+*magic -T sky130A.tech sky130_inv.mag &*
+
+![2024-04-06](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/93366ba4-767b-4ed2-a74e-d4cf73389daa)
+
+#Verified Rule 1:
+
+![2024-04-06 (2)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/c10da267-42ef-460a-a6fe-4b29ef87a09a)
+
+
+#Verified Rule 2:
+
+![2024-04-06 (3)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/799eead6-9c15-4615-9889-eaed9aa192f3)
+
+Horizontal pitch = 0.46um
+
+Width of standard cell = 1.38um = 0.46*3 
+
+#Verified Rule 3:
+
+![2024-04-06 (3)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/b6db17ca-54f8-4d40-aee4-39ff0e301b19)
+
+Vertical pitch = 0.34um
+
+Height of standard cell = 2.72um = 0.34*8 
+
+
+
 
 
 

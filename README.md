@@ -2,15 +2,18 @@
 ![thumb](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/999d09e6-7f6b-41f8-98b8-81939600af8a)
 
 
-Section 1:
+[Section 1](Section-1:-Inception-of-open-source-EDA,-Openlane-&-Sky130-PDK)
 
-Section2: 
+[Section 2]()
 
 [Section 3](#section3-design-library-cell-using-magic-layout-and-ngspice-characterization)
 
+[Section 4]()
+
+[Section 5]()
 
 
-# Section-1: Inception of open source EDA, Openlane & Sky130 PDK:
+# Section 1: Inception of open source EDA, Openlane & Sky130 PDK
 
 
 
@@ -376,3 +379,36 @@ To view the internal layers of cells we need to enter *expand* in tckon
 
 ![2024-04-06 (27)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/94f1e3e1-8a23-4f33-b500-6b1d8a8b5e7c)
 ![2024-04-06 (28)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/57b7d95f-64b3-4873-b831-a79ad1633047)
+
+# Section 5 Final steps for RTL2GDS using tritonRoute and openSTA 
+
+**Objectives**
+
+1. Perform generation PDN and explore the PDN layout.
+
+#Power distribution network run
+
+![2024-04-07](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/f4f75b19-b3da-44fa-8cf5-bd3421d97c6d)
+
+![2024-04-07](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/d11bd859-7f74-4752-988a-4b9c8acac497)
+
+#Loading PDN def in magic
+
+![2024-04-07](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/a3c57e32-60a4-48ba-828f-3a2cfd7ba3db)
+
+![2024-04-07 (4)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/5cdc24e2-fc16-4582-859e-d2c5cb0a11b4)
+
+![2024-04-07 (5)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/e6380bb4-e035-4a4f-990b-5cc005fad490)
+
+#Routing using Tritonroute 
+
+![316821719-c0c8f372-0293-4fdd-a0a3-691f164e7bed](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/4c04d485-6f83-4f51-9fab-e1c49b97e3fe)
+
+#Routed Def in magic
+
+![316819644-594ef79b-4755-4934-a087-33fb24996526](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/a3062e68-151a-4fa7-a239-293b105090da)
+
+#Timing Report
+
+![316982772-64ccb1d8-74aa-42b0-88d4-a0f9588d2ca2](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/f070aba1-6fdb-4d2b-8ae5-e22ed8a4057b)
+

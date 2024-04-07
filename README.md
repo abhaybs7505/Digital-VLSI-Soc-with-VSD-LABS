@@ -385,6 +385,10 @@ To view the internal layers of cells we need to enter *expand* in tckon
 **Objectives**
 
 1. Perform generation PDN and explore the PDN layout.
+2. Perfrom detailed routing using TritonRoute.
+3. Post-Route parasitic extraction using SPEF extractor.
+4. Post-Route OpenSTA timing analysis with the extracted parasitics of the route.
+
 
 #Power distribution network run
 

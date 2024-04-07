@@ -1,4 +1,4 @@
-# VSD-LABS
+![2024-04-06 (21)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/06873ccb-d341-480b-995b-4f0086a73e3d)![2024-04-06 (21)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/bae6c6fe-254b-470c-8eb8-8db1a5e5b294)# VSD-LABS
 ![thumb](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/999d09e6-7f6b-41f8-98b8-81939600af8a)
 
 
@@ -188,7 +188,13 @@ To load spice file type the command - *ngspice sky130_inv.spice* followed by *pl
 
 ![314018565-e34363cd-a70f-4939-b8e5-efb10620ce93](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/f32f314c-3635-4740-9230-6618164694a1)
 
-calculyioyuodjry
+**Calculation** 
+
+Full transition time = 4.0955-4.0536 = 0.0419ns = 41.9ps
+
+Rise cell delay = Time taken for output to rise to 50% - Time taken for input to fall to 50%
+
+= 1.65V
 
 #Finding the errors in DRC section of old magic file:
 
@@ -261,11 +267,7 @@ To Implement this we need to update the sky130A.tech file
 6.Run openlane flow synthesis with new custom inverter cell.
 7. Remove the newly introduced violations with the introduction of custom inverter cell by modifying design parameters.
 8. Once synthesis has accepted our custom inverter run floorplan, placement and verify the cell is accepted in PnR flow.
-9. Post-Synthesis timing analysis with OpenSTA tool.
-10. Make timing ECO fixes to remove violations.
-11. Replace the old netlist with the new netlist generated after timing ECO fix and implement the floorplan, placement & cts.
-12. Post-CTS OpenROAD timing analysis.
-13. Explore post-CTS OpenROAD timing analysis by removing 'sky130_fd_sc_hd__clkbuf_1' cell from clock buffer list variable 'CTS_CLK_BUFFER_LIST'.
+
 
 
 #Fix up small DRC errors and verify the design is ready to be inserted into our flow.
@@ -307,8 +309,70 @@ Vertical pitch = 0.34um
 
 Height of standard cell = 2.72um = 0.34*8 
 
+**#Saving the layout and opening it**
+To save - *save sky130_vsdinv.mag*
 
+To open - *Command to open custom inverter layout in magic
+magic -T sky130A.tech sky130_vsdinv.mag &*
 
+![2024-04-06 (7)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/26b1b71a-2cd7-4566-b82a-348226d53c7f)
 
+**#Generating lef**
 
+![2024-04-06 (8)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/50a7cd9e-0f00-46bf-a046-7b23a8952501)
 
+Newly created lef file
+
+![2024-04-06 (9)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/5a9b859e-6188-4dd9-bf14-343b64d25dbf)
+
+**#Coping the lef file & lib files to picrov32a design *src* directory**
+
+![2024-04-06 (10)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/f86c82c7-0b64-48fb-861a-9ac7284e98b7)
+
+**#Editting *config.tcl* fie and new lef file to openlane flow**
+
+![2024-04-06 (11)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/104fcb83-6958-4c65-ac3e-12dd76bc8230)
+
+**#Running openlane flow synthesis**
+
+![2024-04-06 (12)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/47abb8d5-a40d-4ac6-b7ef-8cf94d4dfb6b)
+![2024-04-06 (13)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/6dd0e60e-0f59-4ac1-8a0e-694447d0b7d4)
+![2024-04-06 (14)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/312a82df-71ff-41e0-89f1-eac5ff3ac62d)
+
+**#Removing the violations with inducing custom inverter**
+
+![2024-04-06 (15)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/dd336df2-606e-47b5-be3a-41a004d08ea0)
+![2024-04-06 (16)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/007a8950-7bdf-4332-8840-0593cd130fed)
+
+#Changing parameters to improve timing 
+
+![2024-04-06 (17)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/a36c0d9b-fdd2-426d-a31b-c725bffca82e)
+![2024-04-06 (18)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/25cbbaed-055f-45c6-8c24-c3be3b5b06fc)
+![2024-04-06 (19)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/32584e87-4a6c-4483-aebe-3e9227299c9e)
+
+#Improved timing anf values
+
+![2024-04-06 (20)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/59f76b4c-7aa4-4f77-a4e2-7c11ea2d44b7)
+![2024-04-06 (21)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/125664c1-db4a-4bc7-86af-6edd9231994e)
+
+**#Runnig floorplan & placement to verify the cell is accepted in PnR flow**
+
+![2024-04-06 (22)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/ea3bcd3d-7d02-4a03-ab0b-c5c3d7241c1e)
+
+It is showing error, to resolve the following set of commands is requied
+
+![2024-04-06 (23)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/f94de7bd-d971-45e9-8850-708fb80227ce)
+
+Now running the placement
+
+![2024-04-06 (24)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/fd79a77f-7bdf-4e04-b186-69e74e990bf7)
+![2024-04-06 (25)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/092863e7-08b7-489d-90db-7c7cf474a845)
+
+**#Loading placement in magic**
+
+![2024-04-06 (26)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/8c71af0b-3174-4734-ba99-6022a752d2c2)
+
+To view the internal layers of cells we need to enter *expand* in tckon
+
+![2024-04-06 (27)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/94f1e3e1-8a23-4f33-b500-6b1d8a8b5e7c)
+![2024-04-06 (28)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/57b7d95f-64b3-4873-b831-a79ad1633047)

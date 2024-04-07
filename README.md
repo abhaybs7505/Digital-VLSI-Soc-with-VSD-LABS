@@ -4,13 +4,13 @@
 
 [Section 1](#section-1-inception-of-open-source-eda-openlane-and-sky130-pdk)
 
-[Section 2]()
+[Section 2](#section-2-good-floorplan-vs-bad-floorplan-and-introduction-to-library-cells)
 
 [Section 3](#section3-design-library-cell-using-magic-layout-and-ngspice-characterization)
 
-[Section 4]()
+[Section 4](#section-4-pre-layout-timing-analysis-and-importance-of-good-clock-tree)
 
-[Section 5]()
+[Section 5](#-Section-5-final-steps-for-rtl2gds-using-tritonRoute-and-opensta )
 
 
 # Section 1 Inception of open source EDA Openlane and Sky130 PDK
@@ -55,7 +55,7 @@ $Ratio$ = $\frac{1613}{14876}$
 Percentage = 10.84296854%      
 
 
-# Section-2: Good floorplan vs Bad floorplan and introduction to library cells:
+# Section 2 Good floorplan vs Bad floorplan and introduction to library cells
 **Objectives-**
 + Run 'picorv32a' design floorplan using OpenLANE flow and generate necessary outputs.
 + Calculate the die area in microns from the values in floorplan def.

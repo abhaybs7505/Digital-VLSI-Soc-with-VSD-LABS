@@ -10,7 +10,7 @@
 
 [Section 4](#section-4-pre-layout-timing-analysis-and-importance-of-good-clock-tree)
 
-[Section 5](#-Section-5-final-steps-for-rtl2gds-using-tritonRoute-and-opensta )
+[Section 5](#section-5-final-steps-for-rtl2gds-using-tritonRoute-and-opensta )
 
 
 # Section 1 Inception of open source EDA Openlane and Sky130 PDK

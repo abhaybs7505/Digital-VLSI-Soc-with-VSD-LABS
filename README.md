@@ -219,10 +219,6 @@ Rise cell delay = Time taken for output to rise to 50% - Time taken for input to
 
 ![2024-04-05 (7)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/ff7bf398-ef11-42af-9bfd-2cd8b084804f)
 
-#Updated sky130A.tech file
-
-![315579814-dc30df54-3282-42f0-8e7d-fc4d8877ed64](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/fd31d72a-17e9-4662-b6d7-05f5c9a5542f)
-![315565406-d112ca07-854c-41e7-8822-c269e21defea](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/ef2d905d-4541-46a1-b026-c3dce43c01b0)
 
 #Rule implemented
 
@@ -235,10 +231,6 @@ Screenshot of rule implemented
 To Implement this we need to update the sky130A.tech file
 
 ![315588573-a3f92160-6701-48fb-b6cf-e4c41dc4a531](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/20c7cd0a-c3d6-4f04-9b7c-8017b3086eee)
-
-#Updated sky130A.tech file
-
-![315587555-b5892f9b-9c5d-4b1b-baa2-6fe45f3965b1](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/3cd3edfc-b1c0-4bb2-9c6c-47fd578a5e0f)
 
 
 #Incorrect nwell.4 rule, No DRC violation

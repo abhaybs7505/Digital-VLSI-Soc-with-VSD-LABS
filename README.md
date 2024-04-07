@@ -181,15 +181,15 @@ To load spice file type the command - *ngspice sky130_inv.spice* followed by *pl
 
 **20% Screenshot**
 
-![314009074-0180052c-4b8c-4bd8-928c-cd8ab34d5a17](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/ebcd6bd1-84f7-4c0b-bb95-0024102694fe)
+![314020455-3d2ff2e5-dab6-497a-b5a4-74959f69c2a2](https://github.com/abhaybs7505/Digital-VLSI-Soc-with-VSD-LABS/assets/165189754/a84b28a0-d873-427f-835e-f0160e81ea36)
 
 **80% Screenshot**
 
-![314009811-7bc0eeee-c7cd-464e-a90b-cac8d4f83144](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/39aa6491-3551-46f6-8d01-021c85a47c60)
+![314020455-3d2ff2e5-dab6-497a-b5a4-74959f69c2a2](https://github.com/abhaybs7505/Digital-VLSI-Soc-with-VSD-LABS/assets/165189754/44e3fac6-c83a-451b-afed-24838c0c481d)
 
 **50% Screenshot**
 
-![314018565-e34363cd-a70f-4939-b8e5-efb10620ce93](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/f32f314c-3635-4740-9230-6618164694a1)
+![314018565-e34363cd-a70f-4939-b8e5-efb10620ce93](https://github.com/abhaybs7505/Digital-VLSI-Soc-with-VSD-LABS/assets/165189754/d37559e8-2ca2-457c-bc1f-0db36fb45389)
 
 **Calculation** 
 

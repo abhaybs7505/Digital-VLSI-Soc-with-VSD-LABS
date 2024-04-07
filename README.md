@@ -2,7 +2,7 @@
 ![thumb](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/999d09e6-7f6b-41f8-98b8-81939600af8a)
 
 
-[Section 1](section-1-inception-of-open-source-eda-openlane-and-sky130-pdk)
+[Section 1](#section-1-inception-of-open-source-eda-openlane-and-sky130-pdk)
 
 [Section 2]()
 

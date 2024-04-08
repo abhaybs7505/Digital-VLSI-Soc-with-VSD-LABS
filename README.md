@@ -228,12 +228,12 @@ Rise cell delay = Time taken for output to rise to 50% - Time taken for input to
 
 #Rule implemented
 
-![2024-04-08 (2)](https://github.com/abhaybs7505/Digital-VLSI-Soc-with-VSD-LABS/assets/165189754/2ea2cb7d-5ac1-430f-be4c-57e20b8da596)
+![2024-04-08 (4)](https://github.com/abhaybs7505/Digital-VLSI-Soc-with-VSD-LABS/assets/165189754/407c2c72-6fd7-4a54-8955-5e8ad1793d4e)
 
 
 #Incorrect nwell.4 rule, No DRC violation
 
-![2024-04-08 (2)](https://github.com/abhaybs7505/Digital-VLSI-Soc-with-VSD-LABS/assets/165189754/ec401b9a-7733-4278-b48a-e4bff69c800d)
+![2024-04-08 (10)](https://github.com/abhaybs7505/Digital-VLSI-Soc-with-VSD-LABS/assets/165189754/55eb21c8-1ec8-4bf9-b50c-0057a2649ab5)
 
 
 #Change of Commands in sky130A.tech file
@@ -243,12 +243,16 @@ Rise cell delay = Time taken for output to rise to 50% - Time taken for input to
 
 
 #To check run the commands in tkcon window
+
 *tech load sky130A.tech*
+
 *drc style drc(full)*
+
 *drc check*
+
 *drc why*
 
-![Uploading 2024-04-08 (6).png…]()
+![2024-04-08 (6)](https://github.com/abhaybs7505/Digital-VLSI-Soc-with-VSD-LABS/assets/165189754/5b00086f-6542-4a24-8e03-5f68d7a155e2)
 
 
 

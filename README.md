@@ -401,15 +401,12 @@ To view the internal layers of cells we need to enter *expand* in tckon
 
 ![2024-04-07 (5)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/e6380bb4-e035-4a4f-990b-5cc005fad490)
 
-#Routing using Tritonroute 
-
-![316821719-c0c8f372-0293-4fdd-a0a3-691f164e7bed](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/4c04d485-6f83-4f51-9fab-e1c49b97e3fe)
 
 #Routed Def in magic
 
-![316819644-594ef79b-4755-4934-a087-33fb24996526](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/a3062e68-151a-4fa7-a239-293b105090da)
+![2024-04-08 (16)](https://github.com/abhaybs7505/Digital-VLSI-Soc-with-VSD-LABS/assets/165189754/8a531935-f459-4382-aa45-8a1956b30e5a)
 
 #Timing Report
 
-![316982772-64ccb1d8-74aa-42b0-88d4-a0f9588d2ca2](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/f070aba1-6fdb-4d2b-8ae5-e22ed8a4057b)
+![2024-04-08 (15)](https://github.com/abhaybs7505/Digital-VLSI-Soc-with-VSD-LABS/assets/165189754/912cb0c1-1200-4457-ab09-b77672f117ae)
 

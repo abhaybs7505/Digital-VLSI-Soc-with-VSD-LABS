@@ -1,4 +1,4 @@
-# Digital VLSI Soc with VSD-LABS
+![2024-04-08 (19)](https://github.com/abhaybs7505/Digital-VLSI-Soc-with-VSD-LABS/assets/165189754/53248c02-8139-47e2-8b28-491bb3711436)# Digital VLSI Soc with VSD-LABS
 ![thumb](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/999d09e6-7f6b-41f8-98b8-81939600af8a)
 
 
@@ -404,7 +404,8 @@ To view the internal layers of cells we need to enter *expand* in tckon
 
 #Routed Def in magic
 
-![2024-04-08 (16)](https://github.com/abhaybs7505/Digital-VLSI-Soc-with-VSD-LABS/assets/165189754/8a531935-f459-4382-aa45-8a1956b30e5a)
+![2024-04-08 (19)](https://github.com/abhaybs7505/Digital-VLSI-Soc-with-VSD-LABS/assets/165189754/a5acaaa0-84a3-477f-8f53-871443a909ec)
+
 
 #Timing Report
 

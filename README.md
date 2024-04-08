@@ -215,32 +215,32 @@ Rise cell delay = Time taken for output to rise to 50% - Time taken for input to
 ![2024-04-05 (4)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/07171554-1522-4bd9-b14c-f50d9c45c2e9)
 ![2024-04-05 (6)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/09693002-dfd8-4af4-be9f-95a013fb2c00)
 
+
 #Poly.9 rule violation, No Drc error
 
 ![2024-04-05 (7)](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/ff7bf398-ef11-42af-9bfd-2cd8b084804f)
 
+#Updating sky130A.tech file
+
+![2024-04-08](https://github.com/abhaybs7505/Digital-VLSI-Soc-with-VSD-LABS/assets/165189754/6be92e95-0162-416e-9047-91f59df5aa63)
+![2024-04-08 (2)](https://github.com/abhaybs7505/Digital-VLSI-Soc-with-VSD-LABS/assets/165189754/5c92ddc6-8114-4856-b891-6ff06ac52def)
+
 
 #Rule implemented
 
-![315580472-d5afe8d8-691b-485d-a89a-8f901e18b56e](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/1b91e47d-baa9-4902-8910-85172edb2e5b)
-
-#difftap.2 rule violation, No DRC error
-
-Screenshot of rule implemented
-
-To Implement this we need to update the sky130A.tech file
-
-![315588573-a3f92160-6701-48fb-b6cf-e4c41dc4a531](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/20c7cd0a-c3d6-4f04-9b7c-8017b3086eee)
+![2024-04-08 (2)](https://github.com/abhaybs7505/Digital-VLSI-Soc-with-VSD-LABS/assets/165189754/2ea2cb7d-5ac1-430f-be4c-57e20b8da596)
 
 
 #Incorrect nwell.4 rule, No DRC violation
 
-![315594932-87da8944-0ad8-455d-97ec-3909eac656c3](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/3f4ab2ef-df9d-4c20-bd8e-41e74fa601e3)
+![2024-04-08 (2)](https://github.com/abhaybs7505/Digital-VLSI-Soc-with-VSD-LABS/assets/165189754/ec401b9a-7733-4278-b48a-e4bff69c800d)
+
 
 #Change of Commands in sky130A.tech file
 
-![315598066-886c6930-6314-4a6f-97d9-6b8423444ac0](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/08522fa0-e3a9-440f-bbb5-c8ae34145112)
-![315598080-d9808e9a-42c2-4421-9b82-2ef65a5a1ad7](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/e841ff53-3604-4021-9b03-e98e43225c1d)
+![2024-04-08 (7)](https://github.com/abhaybs7505/Digital-VLSI-Soc-with-VSD-LABS/assets/165189754/084f5191-1e02-4df9-89d1-aadcfd75e786)
+![2024-04-08 (8)](https://github.com/abhaybs7505/Digital-VLSI-Soc-with-VSD-LABS/assets/165189754/d97c74b7-de91-4696-8acf-dc6259baa9f0)
+
 
 #To check run the commands in tkcon window
 *tech load sky130A.tech*
@@ -248,7 +248,8 @@ To Implement this we need to update the sky130A.tech file
 *drc check*
 *drc why*
 
-![315600131-49b1004d-f860-4ca7-86f4-4d79784a01cf](https://github.com/abhaybs7505/VSD-LABS/assets/165189754/81b8843f-90ec-4e24-b227-b0b0e5fa1501)
+![Uploading 2024-04-08 (6).png…]()
+
 
 
 # Section 4 Pre-layout timing analysis and importance of good clock tree
